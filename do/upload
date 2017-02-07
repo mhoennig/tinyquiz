@@ -1,0 +1,4 @@
+#!/bin/bash
+#rm -rf dist/*
+#ng build --prod --aot
+rsync -vza dist/* mih00@mih00.hostsharing.net:doms/javagil.de/subs/tinyquiz/

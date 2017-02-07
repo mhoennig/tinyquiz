@@ -1,0 +1,17 @@
+
+<div class="quiz">
+
+  <span *ngFor="let wordPair of shuffledRiddle; let i = index"
+        [class.show]="visible" class="step">
+    <button (click)="clicked(wordPair.question, wordPair.answer)" 
+            [disabled]="isDone(wordPair.question)"
+            [class.selected]="isSelected(wordPair.question)"
+            [class.correct]="isHighlightingAsCorrect(wordPair.question)"
+            [class.wrong]="isHighlightingAsWrong(wordPair.question)">
+      {{wordPair.question}}
+    </button>
+  </span>
+  
+  <p *ngIf="visible">tap the pairs</p>
+  
+</div>

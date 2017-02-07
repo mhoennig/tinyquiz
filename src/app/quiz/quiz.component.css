@@ -1,0 +1,52 @@
+button {
+  font-family: Arial;
+  font-size: 1em;
+  background-color: #eee;
+  border: none;
+  margin: 0.25em;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+button.selected {
+  color: #fff !important;
+  background-color: nm#0066FF !important;
+}
+
+button.wrong {
+  color: #000 !important;
+  background-color: #FF0000 !important;
+}
+
+button.correct {
+  color: #000 !important;
+  background-color: #00FF00 !important;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  color: #e0e0e0;
+  background-color: #f0f0f0;
+  cursor: auto;
+}
+
+.quiz {
+  width: 15em;
+  max-width: 100%;
+  font-size: 150%;
+  text-align: center;
+  display: inline-block;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+.step {
+  opacity: 0;
+  transition: .7s ease-in-out all;
+}
